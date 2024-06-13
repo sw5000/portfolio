@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+       * {
+           margin: 0;
+           padding: 0;
+           border: 0;
+           font-family: inherit;
+       }
+
+
+       body {
+           font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+       }
+
+
+       nav .container ul {
+           list-style-type: none;
+       }
+
+
+       nav .container ul li:hover {
+           color: rgba(0,0,0, 0.55);
+           cursor: pointer;
+       }
+
+
+       .container {
+           max-width: 900px;
+           margin: 15px;
+       }
+       nav .container ul {
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+       }
+
+
+       img {
+           width: 250px;
+           height: 250px;
+       }
+
+
+       .intro .container {
+               height: 100%;
+               display: flex;
+               justify-content:  center;
+               align-items: center;
+               gap: 10px;
+       }
+
+
+       .intro .intro-text {
+           text-align: center;
+       }
+
+
+       .about-me .container {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           gap: 8px
+       }
+       .about-me p {
+           font-size: 12px;
+       }
+       .experience, .skills, .extra {
+           flex: 33%
+       }†
+
+
+       .experience h3, .skills h3, .extra h3 {
+           text-align: center;
+           vertical-align: middle;
+       }
+       .projects .container {
+           display: flex;
+           gap: 8px;
+		   margin-bottom: 50px;
+       }
+       .project {
+           text-align: center;
+           flex: 33%;
+       }
+     .footer {
+     	padding: 10px
+     }
+     .footer {
+     	background-color: black;
+     	color: white;
+     }
+     .footer .footeritems {
+     	display: flex;
+    	justify-content: center;
+     	align-items: center;
+     	list-style-type: none;
+    	font-size: 1.7rem
+     }
+   </style>
+</head>
+<body>
+   <nav>
+       <div class="container">
+           <ul>
+               <li class="navitem">
+                   About me
+               </li>
+               <li class="navitem">
+                   Projects
+               </li>
+               <li class="navitem">
+                   Contact
+               </li>
+           </ul>
+       </div>
+   </nav>
+   <section class="intro">
+       <div class="container">
+           <div class="img"><img></div>
+           <div class="intro-text">
+               <h3>Mamoudou Niang</h3>
+               <p class="intro-paragraph">I'm Mamoudou, a sophmore in high school and an aspiring front-end web developer </p>
+           </div>
+       </div>
+   </section>
+   <section class="about-me">
+       <div class="container">
+           <div class="experience">
+               <h3>Experience</h3>
+               <ul>
+                   <li>
+                       <p>No formal work experience</p>
+                   </li>
+                   <li>
+                       <p>Experience building individual projects</p>
+                   </li>
+               </ul>
+           </div>
+           <br>
+           <div class="skills">
+               <h3>Skills</h3>
+               <ul>
+                   <li>
+                       <p>HTML5/CSS3/Javascript</p>
+                   </li>
+                   <li>
+                       <p>Basic Python</p>
+                   </li>
+               </ul>
+           </div>
+           <div class="extra">
+               <h3>Extracurriculars</h3>
+               <ul>
+                   <li>
+                       <p>Google Code Next Member</p>
+                   </li>
+                   <li>
+                       <p>Language Learning; B2 level in French</p>
+                   </li>
+               </ul>
+           </div>
+       </div>
+   </section>
+   <section class="projects">
+       <div class="container">
+           <div class="project">
+               <h3 class="project-title">Password Generator</h3>
+               <p class="project-description">Chrome extension that allows user to generate passwords based on parameters. Uses local storage to save up to 10 passwords.</p>
+           </div>
+           <div class="project">
+               <h3 class="project-title">Bootstrap Sample Layout</h3>
+               <p class="project-description">Layout using HTML5 and Bootstrap</p>
+           </div>
+           <div class="project">
+               <h3 class="project-title">Etch-a-Sketch</h3>
+               <p class="project-description">Web-based etch-a-sketch app</p>
+           </div>
+       </div>
+   </section>
+  <footer class="footer">
+  		<ul class="footeritems">
+          	<li class="footeritem">Contact: niang.mamoudou00@gmail.com </li>  
+         </ul>
+  </footer>
+</body>
+</html>
+
+
